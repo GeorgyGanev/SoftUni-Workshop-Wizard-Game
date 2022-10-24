@@ -1,5 +1,7 @@
-let startBtn = document.querySelector('.start-screen')
+let startScreen = document.querySelector('.start-screen');
+let gameScreen = document.querySelector('.game-screen');
 
-startBtn.addEventListener('click', () => {
-   
+startScreen.addEventListener('click', () => {
+   startScreen.classList.add('hidden');
+   gameScreen.classList.remove('hidden');
 })

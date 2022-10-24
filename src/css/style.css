@@ -27,3 +27,13 @@ body {
     background-color: cornflowerblue;
     cursor: pointer;
 }
+
+.game-screen {
+    background-color: #41c2ec79;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
