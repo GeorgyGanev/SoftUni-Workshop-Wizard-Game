@@ -1,7 +1,7 @@
 function initState() {
 
     const state = {
-        player: "Olaf",
+        player: "Olaf"
     }
 
     return state;

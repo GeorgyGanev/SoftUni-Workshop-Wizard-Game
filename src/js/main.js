@@ -3,7 +3,15 @@ let state = initState();
 let game = initGameObjects();
 
 
-startScreen.addEventListener('click', () => {
-   startScreen.classList.add('hidden');
-   gameScreen.classList.remove('hidden');
+game.startScreen.addEventListener('click', () => {
+   game.startScreen.classList.add('hidden');
+   game.gameScreen.classList.remove('hidden');
+
+    //start game
+    start(state,game);
+
+
+
+
+
 })
