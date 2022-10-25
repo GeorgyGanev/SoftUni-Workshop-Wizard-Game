@@ -14,7 +14,9 @@ function initState() {
         },
         bugStats: {
             width: 50,
-            height: 50
+            height: 50,
+            nextSpawnTimestamp: 0,
+            maxSpawnInterval: 3000
         },
         keys: {
             ArrowUp: false,
