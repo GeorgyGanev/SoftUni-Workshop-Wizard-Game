@@ -12,19 +12,19 @@ function gameLoop(state,game){
 
     //Move wizard
     if(state.keys.ArrowRight){
-        wizard.posX += 10;
+        wizard.posX = Math.min(wizard.posX + wizard.speed, game.gameScreen.offsetWidth - wizard.width);
     }
 
     if(state.keys.ArrowLeft){
-        wizard.posX -= 10;
+        wizard.posX = Math.max(wizard.posX - wizard.speed,0);
     }
 
     if(state.keys.ArrowUp){
-        wizard.posY -= 10;
+        wizard.posY = Math.max(wizard.posY - wizard.speed, 0);
     }
 
     if(state.keys.ArrowDown){
-        wizard.posY += 10;
+        wizard.posY = Math.min(wizard.posY + wizard.speed, game.gameScreen.offsetHeight - wizard.height);
     }
 
     //Render
