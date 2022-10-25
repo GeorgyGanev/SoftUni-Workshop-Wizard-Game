@@ -34,6 +34,15 @@ body {
     height: 100%;
 }
 
+.wizard {
+    position: absolute;
+    background-image: url("wizard.png");
+    width: 82px;
+    height: 100px;
+    top: 100px;
+    left: 100px;
+}
+
 .hidden {
     display: none;
 }
