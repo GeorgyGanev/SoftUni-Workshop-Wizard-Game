@@ -2,16 +2,22 @@ function start(state,game){
 
     game.createWizard(state.wizard)
 
-    window.requestAnimationFrame(timestamp => gameLoop(state,game, timestamp));
+    window.requestAnimationFrame(gameLoop.bind(null,state,game));
 }
 
-function gameLoop(state,game, timestamp){
+function gameLoop(state,game,timestamp){
 
     const { wizard } = state;
     const { wizardElement } = game;
 
     //Move wizard
     modifyWizardPosition(state,game);
+
+    if (state.keys.Space){
+        game.wizardElement.classList.add('wizard-fire');
+    } else {
+        game.wizardElement.classList.remove('wizard-fire');
+    }
 
     //Spawn bugs
     if (timestamp > state.bugStats.nextSpawnTimestamp){

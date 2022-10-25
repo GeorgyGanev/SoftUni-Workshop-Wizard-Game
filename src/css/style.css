@@ -40,6 +40,12 @@ body {
     background-size: cover;
 }
 
+.wizard-fire {
+    position: absolute;
+    background-image: url("wizard-fire.png");
+    background-size: cover;
+}
+
 .bug {
     position: absolute;
     background-image: url("bug.png");

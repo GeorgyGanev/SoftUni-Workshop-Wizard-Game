@@ -6,7 +6,8 @@ const availableKeys = [
     'ArrowUp',
     'ArrowDown',
     'ArrowLeft',
-    'ArrowRight'
+    'ArrowRight',
+    'Space'
 ]
 
 document.addEventListener('keydown', (e) => {
@@ -20,7 +21,6 @@ document.addEventListener('keyup', (e) => {
         state.keys[e.code] = false;
     }
 });
-
 
 game.startScreen.addEventListener('click', () => {
    game.startScreen.classList.add('hidden');

@@ -23,7 +23,8 @@ function initState() {
             ArrowUp: false,
             ArrowDown: false,
             ArrowLeft: false,
-            ArrowRight: false
+            ArrowRight: false,
+            Space: false
         },
     }
 
