@@ -58,3 +58,9 @@ height: 100px;
     background-image: url("../images/bug.png");
     background-size: cover;
 }
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 1000px;
+}

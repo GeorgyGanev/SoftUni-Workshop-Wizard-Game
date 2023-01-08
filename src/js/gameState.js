@@ -6,6 +6,9 @@ function initState() {
     const state = {
         player: "Olaf",
         gameOver: false,
+        score: 0,
+        scoreRate: 1,
+        killPoints: 1000,
         wizard: {
             width: 82,
             height: 100,
