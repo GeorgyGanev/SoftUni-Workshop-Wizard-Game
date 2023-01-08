@@ -35,21 +35,11 @@ body {
 }
 
 .wizard {
-    position: absolute;
-    background-image: url("wizard.png");
-    background-size: cover;
-}
-
-.wizard-fire {
-    position: absolute;
-    background-image: url("wizard-fire.png");
-    background-size: cover;
-}
-
-.bug {
-    position: absolute;
-    background-image: url("bug.png");
-    background-size: cover;
+position: absolute;
+background-image: url("../images/wizard.png");
+background-size: cover;
+width: 82px;
+height: 100px;
 }
 
 .fireball {
