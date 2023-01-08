@@ -14,9 +14,13 @@ function gameLoop(state,game,timestamp){
     modifyWizardPosition(state,game);
 
     if (state.keys.Space){
-        game.wizardElement.classList.add('wizard-fire');
+        
+        game.wizardElement.backgroundImage = 'url("wizard-fire.png")';
+        
+        game.createFireball(wizard, state.fireball);
+
     } else {
-        game.wizardElement.classList.remove('wizard-fire');
+        game.wizardElement.backgroundImage = 'url("wizard.png")';
     }
 
     //Spawn bugs
@@ -37,7 +41,7 @@ function gameLoop(state,game,timestamp){
        
     })
 
-    //Render Wizord
+    //Render Wizard
     wizardElement.style.left = wizard.posX + 'px';
     wizardElement.style.top = wizard.posY + 'px';
     
