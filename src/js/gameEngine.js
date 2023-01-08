@@ -15,12 +15,12 @@ function gameLoop(state,game,timestamp){
 
     if (state.keys.Space){
         
-        game.wizardElement.backgroundImage = 'url("wizard-fire.png")';
+        game.wizardElement.style.backgroundImage = 'url("./images/wizard-fire.png")';
         
         game.createFireball(wizard, state.fireball);
 
     } else {
-        game.wizardElement.backgroundImage = 'url("wizard.png")';
+        game.wizardElement.style.backgroundImage = 'url("./images/wizard.png")';
     }
 
     //Spawn bugs
